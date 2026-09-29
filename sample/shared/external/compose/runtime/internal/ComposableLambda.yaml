@@ -1,0 +1,12 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: ComposableLambdaExtern
+  file:
+    name: ComposableLambda.kt
+    declaration:
+      - function:
+          fqName: androidx.compose.runtime.internal.rememberComposableLambda
+          parameters: [kotlin.Int, kotlin.Boolean, kotlin.Any]
+      - function:
+          fqName: androidx.compose.runtime.internal.composableLambdaInstance
+          parameters: [kotlin.Int, kotlin.Boolean, kotlin.Any]

@@ -1,0 +1,12 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: TextStyleExtern
+  file:
+    name: TextStyle.kt
+    declaration:
+      - interface:
+          fqName: androidx.compose.ui.text.TextStyle.Companion
+          declaration:
+            - property:
+                fqName: androidx.compose.ui.text.TextStyle.Companion.Default
+                type: androidx.compose.ui.text.TextStyle

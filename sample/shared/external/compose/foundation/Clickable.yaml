@@ -1,0 +1,16 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: ClickableExtern
+  file:
+    name: Clickable.kt
+    declaration:
+      - function:
+          fqName: androidx.compose.foundation.clickable
+          extension: androidx.compose.ui.Modifier
+          parameters: [
+            kotlin.Boolean,
+            kotlin.String,
+            androidx.compose.ui.semantics.Role,
+            androidx.compose.foundation.interaction.MutableInteractionSource,
+            "() -> kotlin.Unit",
+          ]

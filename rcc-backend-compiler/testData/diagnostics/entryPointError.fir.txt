@@ -1,0 +1,44 @@
+FILE: entryPointError.kt
+    package com.ukenoveldiyar.rcc.error
+
+    @R|com/ukenoveldiyar/rcc/backend/compiler/annotation/RccEntryPoint|() public final fun entryPointCallHost(): R|kotlin/Unit| {
+        lval componentError: R|com/ukenoveldiyar/rcc/error/ComponentError| = R|com/ukenoveldiyar/rcc/error/ComponentError.ComponentError<Inapplicable(INAPPLICABLE_ARGUMENTS_MAPPING_ERROR): com/ukenoveldiyar/rcc/error/ComponentError.ComponentError>#|()
+        lval nonCompanion: R|com/ukenoveldiyar/rcc/error/ComponentError.Companion| = Q|com/ukenoveldiyar/rcc/error/ComponentError|
+        R|<local>/componentError|.R|com/ukenoveldiyar/rcc/error/ComponentError.value1Error|
+        R|<local>/componentError|.R|com/ukenoveldiyar/rcc/error/ComponentError.value2Error| = Int(10)
+        R|<local>/componentError|.R|com/ukenoveldiyar/rcc/error/ComponentError.memberError|()
+        R|<local>/componentError|.R|com/ukenoveldiyar/rcc/error/ComponentError.memberError|(Int(10))
+        R|kotlin/with<Inapplicable(INAPPLICABLE): kotlin/with>#|<<ERROR TYPE REF: Cannot infer argument for type parameter T>, <ERROR TYPE REF: Cannot infer argument for type parameter R>>(<Unresolved name: nonComponent>#, <L> = with@fun <ERROR TYPE REF: Cannot infer argument for type parameter T>.<anonymous>(): <ERROR TYPE REF: Unresolved name: memberError> <inline=Inline, kind=EXACTLY_ONCE>  {
+            ^ String().<Unresolved name: memberError>#(Int(10))
+        }
+        )
+    }
+    public final class ComponentError : R|kotlin/Any| {
+        public constructor(value1Error: R|kotlin/Int|, value2Error: R|kotlin/Int|): R|com/ukenoveldiyar/rcc/error/ComponentError| {
+            super<R|kotlin/Any|>()
+        }
+
+        public final val value1Error: R|kotlin/Int| = R|<local>/value1Error|
+            public get(): R|kotlin/Int|
+
+        public final var value2Error: R|kotlin/Int| = R|<local>/value2Error|
+            public get(): R|kotlin/Int|
+            public set(value: R|kotlin/Int|): R|kotlin/Unit|
+
+        public final fun memberError(): R|kotlin/Unit| {
+        }
+
+        public final fun memberError(paremeter1: R|kotlin/Int|): R|kotlin/Unit| {
+        }
+
+        public final fun R|kotlin/String|.memberError(paremeter1: R|kotlin/Int|): R|kotlin/Unit| {
+        }
+
+        public final companion object Companion : R|kotlin/Any| {
+            private constructor(): R|com/ukenoveldiyar/rcc/error/ComponentError.Companion| {
+                super<R|kotlin/Any|>()
+            }
+
+        }
+
+    }

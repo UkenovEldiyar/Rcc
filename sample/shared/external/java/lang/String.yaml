@@ -1,0 +1,9 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: JavaLangStringExtern
+  file:
+    name: JavaLangString.kt
+    declaration:
+      - function:
+          fqName: java.lang.String.valueOf
+          parameters: [kotlin.Int]

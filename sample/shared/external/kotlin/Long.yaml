@@ -1,0 +1,11 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: LongExtern
+  file:
+    name: Long.kt
+    declaration:
+      - class:
+          fqName: kotlin.Long
+          declaration:
+            - function:
+                fqName: kotlin.Long.hashCode

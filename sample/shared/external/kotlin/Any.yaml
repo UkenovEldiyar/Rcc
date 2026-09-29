@@ -1,0 +1,18 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: AnyExtern
+  file:
+    name: Any.kt
+    declaration:
+      - class:
+          fqName: kotlin.Any
+          declaration:
+            - function:
+                fqName: kotlin.Any.equals
+                parameters: [kotlin.Any]
+
+            - function:
+                fqName: kotlin.Any.hashCode
+
+            - function:
+                fqName: kotlin.Any.toString

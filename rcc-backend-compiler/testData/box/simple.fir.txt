@@ -1,0 +1,9 @@
+FILE: simple.kt
+    package foo.bar
+
+    public final fun box1(): R|kotlin/String| {
+        ^box1 R|foo/bar/box2|().R|kotlin/Int.toString|()
+    }
+    public final fun box2(): R|kotlin/Int| {
+        ^box2 Int(0)
+    }

@@ -1,0 +1,7 @@
+FILE: composeFirst.kt
+    @R|androidx/compose/runtime/Composable|() public final fun Greeting(name: R|kotlin/String|): R|kotlin/String| {
+        ^Greeting <strcat>(String(Hello, ), R|<local>/name|, String(!))
+    }
+    public final fun box(): R|kotlin/String| {
+        ^box String(OK)
+    }

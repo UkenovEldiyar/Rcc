@@ -1,0 +1,9 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: RecomposeScopeImplExtern
+  file:
+    name: RecomposeScopeImpl.kt
+    declaration:
+      - function:
+          fqName: androidx.compose.runtime.updateChangedFlags
+          parameters: [kotlin.Int]

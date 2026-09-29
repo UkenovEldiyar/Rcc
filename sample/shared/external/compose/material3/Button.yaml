@@ -1,0 +1,20 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: ButtonExtern
+  file:
+    name: Button.kt
+    declaration:
+      - function:
+          fqName: androidx.compose.material3.Button
+          parameters: [
+            "() -> kotlin.Unit",
+            androidx.compose.ui.Modifier,
+            kotlin.Boolean,
+            androidx.compose.ui.graphics.Shape,
+            androidx.compose.material3.ButtonColors,
+            androidx.compose.material3.ButtonElevation,
+            androidx.compose.foundation.BorderStroke,
+            androidx.compose.foundation.layout.PaddingValues,
+            androidx.compose.foundation.interaction.MutableInteractionSource,
+            "@androidx.compose.runtime.Composable androidx.compose.foundation.layout.RowScope.() -> kotlin.Unit",
+          ]

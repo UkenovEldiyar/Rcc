@@ -1,0 +1,12 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: TextOverflowExtern
+  file:
+    name: TextOverflow.kt
+    declaration:
+      - interface:
+          fqName: androidx.compose.ui.text.style.TextOverflow.Companion
+          declaration:
+            - property:
+                fqName: androidx.compose.ui.text.style.TextOverflow.Companion.Clip
+                type: androidx.compose.ui.text.style.TextOverflow

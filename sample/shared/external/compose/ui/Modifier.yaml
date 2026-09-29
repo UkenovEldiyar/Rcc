@@ -1,0 +1,18 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: ModifierExtern
+  file:
+    name: Modifier.kt
+    declaration:
+      - function:
+          fqName: androidx.compose.ui.Modifier.Companion
+
+      - function:
+          fqName: androidx.compose.foundation.layout.fillMaxSize
+          extension: androidx.compose.ui.Modifier
+          parameters: [kotlin.Float]
+
+      - function:
+          fqName: androidx.compose.foundation.layout.width
+          extension: androidx.compose.ui.Modifier
+          parameters: [androidx.compose.ui.unit.Dp]

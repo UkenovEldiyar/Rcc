@@ -1,0 +1,24 @@
+external:
+  package: ""
+  name: ColumnExtern
+  file:
+    name: Column.kt
+    declaration:
+      - function:
+          annotations: [ @androidx.compose.runtime.Composable androidx.compose.foundation.layout.ColumnScope ]
+          fqName: androidx.compose.foundation.layout.Column
+          parameters:
+            - androidx.compose.ui.Modifier
+            - androidx.compose.foundation.layout.Arrangement.Vertival
+            - androidx.compose.ui.Alignment.Horizontal
+            - "@androidx.compose.runtime.Composable androidx.compose.foundation.layout.ColumnScope.() -> kotlin.Unit"
+      - interface:
+          fqName: androidx.compose.foundation.layout.ColumnScope
+          declaration:
+            - function:
+                fqName: androidx.compose.foundation.layout.weight
+                extension: androidx.compose.ui.Modifier
+                parameters: [
+                  kotlin.Float,
+                  kotlin.Boolean,
+                ]

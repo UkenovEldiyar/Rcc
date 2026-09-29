@@ -1,0 +1,28 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: TextExtern
+  file:
+    name: Text.kt
+    declaration:
+      - function:
+          fqName: androidx.compose.material3.Text
+          parameters: [
+            kotlin.String,
+            androidx.compose.ui.Modifier,
+            androidx.compose.ui.graphics.Color,
+            androidx.compose.foundation.text.TextAutoSize,
+            androidx.compose.ui.unit.TextUnit,
+            androidx.compose.ui.text.font.FontStyle,
+            androidx.compose.ui.text.font.FontWeight,
+            androidx.compose.ui.text.font.FontFamily,
+            androidx.compose.ui.unit.TextUnit,
+            androidx.compose.ui.text.style.TextDecoration,
+            androidx.compose.ui.text.style.TextAlign,
+            androidx.compose.ui.unit.TextUnit,
+            androidx.compose.ui.text.style.TextOverflow,
+            kotlin.Boolean,
+            kotlin.Int,
+            kotlin.Int,
+            "(androidx.compose.ui.text.TextLayoutResult) -> kotlin.Unit",
+            androidx.compose.ui.text.TextStyle,
+          ]

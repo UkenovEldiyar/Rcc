@@ -1,0 +1,27 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: SnapshotStateExtern
+  file:
+    name: SnapshotState.kt
+    declaration:
+      - function:
+          fqName: androidx.compose.runtime.mutableStateOf
+
+      - function:
+          fqName: androidx.compose.runtime.structuralEqualityPolicy
+
+      - interface:
+          fqName: androidx.compose.runtime.State
+          declaration:
+            - property:
+                fqName: androidx.compose.runtime.State.value
+                type: kotlin.Any
+                mutable: false
+
+      - interface:
+          fqName: androidx.compose.runtime.MutableState
+          declaration:
+            - property:
+                fqName: androidx.compose.runtime.MutableState.value
+                type: kotlin.Any
+                mutable: true

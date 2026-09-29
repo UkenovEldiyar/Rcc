@@ -1,0 +1,12 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: ColorExtern
+  file:
+    name: Color.kt
+    declaration:
+      - interface:
+          fqName: androidx.compose.ui.graphics.Color.Companion
+          declaration:
+            - property:
+                fqName: androidx.compose.ui.graphics.Color.Companion.Unspecified
+                type: androidx.compose.ui.graphics.Color

@@ -1,0 +1,16 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: RowExtern
+  file:
+    name: Row.kt
+    declaration:
+      # Реальный `Row` — `inline fun`, тот же паттерн, что `Column` (см. комментарий в Column.yaml):
+      # вызывается через RccRow (sample:shared/RccWrappers.kt), не напрямую.
+      - function:
+          fqName: com.ukenoveldiyar.sample.shared.RccRow
+          parameters: [
+            androidx.compose.ui.Modifier,
+            androidx.compose.foundation.layout.Arrangement.Horizontal,
+            androidx.compose.ui.Alignment.Vertical,
+            "@androidx.compose.runtime.Composable androidx.compose.foundation.layout.RowScope.() -> kotlin.Unit",
+          ]

@@ -1,0 +1,10 @@
+FILE fqName:foo.bar fileName:/simple.kt
+  FUN name:box1 visibility:public modality:FINAL returnType:kotlin.String
+    BLOCK_BODY
+      RETURN type=kotlin.Nothing from='public final fun box1 (): kotlin.String declared in foo.bar'
+        CALL 'public open fun toString (): kotlin.String declared in kotlin.Int' type=kotlin.String origin=null
+          ARG <this>: CALL 'public final fun box2 (): kotlin.Int declared in foo.bar' type=kotlin.Int origin=null
+  FUN name:box2 visibility:public modality:FINAL returnType:kotlin.Int
+    BLOCK_BODY
+      RETURN type=kotlin.Nothing from='public final fun box2 (): kotlin.Int declared in foo.bar'
+        CONST Int type=kotlin.Int value=0

@@ -1,0 +1,11 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: DpExtern
+  file:
+    name: Dp.kt
+    declaration:
+      - property:
+          fqName: androidx.compose.ui.unit.dp
+          extension: kotlin.Int
+          type: androidx.compose.ui.unit.Dp
+          mutable: false

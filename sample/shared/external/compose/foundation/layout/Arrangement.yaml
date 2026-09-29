@@ -1,0 +1,24 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: ArrangementExtern
+  file:
+    name: Arrangement.kt
+    declaration:
+      - interface:
+          fqName: androidx.compose.foundation.layout.Arrangement
+          declaration:
+            - property:
+                fqName: androidx.compose.foundation.layout.Arrangement.Top
+                type: androidx.compose.foundation.layout.Arrangement.Vertical
+
+            - property:
+                fqName: androidx.compose.foundation.layout.Arrangement.Start
+                type: androidx.compose.foundation.layout.Arrangement.Horizontal
+
+            - property:
+                fqName: androidx.compose.foundation.layout.Arrangement.SpaceAround
+                type: androidx.compose.foundation.layout.Arrangement.HorizontalOrVertical
+
+            - property:
+                fqName: androidx.compose.foundation.layout.Arrangement.Center
+                type: androidx.compose.foundation.layout.Arrangement.HorizontalOrVertical

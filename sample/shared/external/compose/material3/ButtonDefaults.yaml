@@ -1,0 +1,55 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: ButtonDefaultsExtern
+  file:
+    name: ButtonDefaults.kt
+    declaration:
+      - interface:
+          fqName: androidx.compose.material3.ButtonDefaults
+          declaration:
+            - property:
+                fqName: androidx.compose.material3.ButtonDefaults.ContentPadding
+                type: androidx.compose.foundation.layout.PaddingValues
+
+            - property:
+                fqName: androidx.compose.material3.ButtonDefaults.shape
+                type: androidx.compose.ui.graphics.Shape
+
+            - function:
+                fqName: androidx.compose.material3.ButtonDefaults.buttonColors
+
+            - function:
+                fqName: androidx.compose.material3.ButtonDefaults.buttonElevation
+                parameters: [
+                  androidx.compose.ui.unit.Dp,
+                  androidx.compose.ui.unit.Dp,
+                  androidx.compose.ui.unit.Dp,
+                  androidx.compose.ui.unit.Dp,
+                  androidx.compose.ui.unit.Dp,
+                ]
+
+      - interface:
+          fqName: androidx.compose.material3.tokens.FilledButtonTokens
+          declaration:
+            - property:
+                fqName: androidx.compose.material3.tokens.FilledButtonTokens.ContainerElevation
+                type: androidx.compose.ui.unit.Dp
+
+            - property:
+                fqName: androidx.compose.material3.tokens.FilledButtonTokens.DisabledContainerElevation
+                type: androidx.compose.ui.unit.Dp
+
+            - property:
+                fqName: androidx.compose.material3.tokens.FilledButtonTokens.FocusedContainerElevation
+                type: androidx.compose.ui.unit.Dp
+
+            - property:
+                fqName: androidx.compose.material3.tokens.FilledButtonTokens.HoveredContainerElevation
+                type: androidx.compose.ui.unit.Dp
+
+            - property:
+                fqName: androidx.compose.material3.tokens.FilledButtonTokens.PressedContainerElevation
+                type: androidx.compose.ui.unit.Dp
+
+      - function:
+          fqName: androidx.compose.foundation.interaction.MutableInteractionSource

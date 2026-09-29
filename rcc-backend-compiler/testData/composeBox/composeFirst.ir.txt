@@ -1,0 +1,32 @@
+FILE fqName:<root> fileName:/composeFirst.kt
+  FUN name:Greeting visibility:public modality:FINAL returnType:kotlin.String
+    VALUE_PARAMETER kind:Regular name:name index:0 type:kotlin.String
+    VALUE_PARAMETER kind:Regular name:$composer index:1 type:androidx.compose.runtime.Composer? [assignable]
+    VALUE_PARAMETER kind:Regular name:$changed index:2 type:kotlin.Int
+    annotations:
+      Composable
+      FunctionKeyMeta(key = -12254257, startOffset = 74, endOffset = 139)
+    BLOCK_BODY
+      WHEN type=kotlin.Unit origin=IF
+        BRANCH
+          if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime' type=kotlin.Boolean origin=null
+          then: CALL 'public final fun traceEventStart (key: kotlin.Int, dirty1: kotlin.Int, dirty2: kotlin.Int, info: kotlin.String): kotlin.Unit declared in androidx.compose.runtime' type=kotlin.Unit origin=null
+            ARG key: CONST Int type=kotlin.Int value=-12254257
+            ARG dirty1: GET_VAR '$changed: kotlin.Int declared in <root>.Greeting' type=kotlin.Int origin=null
+            ARG dirty2: CONST Int type=kotlin.Int value=-1
+            ARG info: CONST String type=kotlin.String value="Greeting (composeFirst.kt:5)"
+      VAR IR_TEMPORARY_VARIABLE name:tmp_0 type:kotlin.String [val]
+        STRING_CONCATENATION type=kotlin.String
+          CONST String type=kotlin.String value="Hello, "
+          GET_VAR 'name: kotlin.String declared in <root>.Greeting' type=kotlin.String origin=null
+          CONST String type=kotlin.String value="!"
+      WHEN type=kotlin.Unit origin=IF
+        BRANCH
+          if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime' type=kotlin.Boolean origin=null
+          then: CALL 'public final fun traceEventEnd (): kotlin.Unit declared in androidx.compose.runtime' type=kotlin.Unit origin=null
+      RETURN type=kotlin.Nothing from='public final fun Greeting (name: kotlin.String, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): kotlin.String declared in <root>'
+        GET_VAR 'val tmp_0: kotlin.String declared in <root>.Greeting' type=kotlin.String origin=null
+  FUN name:box visibility:public modality:FINAL returnType:kotlin.String
+    BLOCK_BODY
+      RETURN type=kotlin.Nothing from='public final fun box (): kotlin.String declared in <root>'
+        CONST String type=kotlin.String value="OK"

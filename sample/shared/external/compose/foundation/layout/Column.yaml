@@ -1,0 +1,25 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: ColumnExtern
+  file:
+    name: Column.kt
+    declaration:
+      - function:
+          fqName: com.ukenoveldiyar.sample.shared.RccColumn
+          parameters: [
+            androidx.compose.ui.Modifier,
+            androidx.compose.foundation.layout.Arrangement.Vertical,
+            androidx.compose.ui.Alignment.Horizontal,
+            "@androidx.compose.runtime.Composable androidx.compose.foundation.layout.ColumnScope.() -> kotlin.Unit",
+          ]
+
+      - interface:
+          fqName: androidx.compose.foundation.layout.ColumnScope
+          declaration:
+            - function:
+                fqName: androidx.compose.foundation.layout.ColumnScope.weight
+                extension: androidx.compose.ui.Modifier
+                parameters: [
+                  kotlin.Float,
+                  kotlin.Boolean,
+                ]

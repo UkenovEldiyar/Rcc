@@ -1,0 +1,7 @@
+FILE: smoke.kt
+    @R|com/ukenoveldiyar/rcc/backend/compiler/annotation/RccEntryPoint|() @R|androidx/compose/runtime/Composable|() public final fun test(): R|kotlin/Unit| {
+        R|androidx/compose/foundation/layout/Column|(<L> = Column@fun R|androidx/compose/foundation/layout/ColumnScope|.<anonymous>(): R|kotlin/Unit| <inline=Inline, kind=UNKNOWN>  {
+            ^@Column Unit
+        }
+        )
+    }

@@ -1,0 +1,17 @@
+FILE: simple.kt
+    package com.ukenoveldiyar.rcc.dump
+
+    @R|com/ukenoveldiyar/rcc/backend/compiler/annotation/RccEntryPoint|() public final fun max(a: R|kotlin/Int|, b: R|kotlin/Int|): R|kotlin/Int| {
+        ^max when () {
+            CMP(>, R|<local>/a|.R|kotlin/Int.compareTo|(R|<local>/b|)) ->  {
+                R|<local>/a|
+            }
+            else ->  {
+                R|<local>/b|
+            }
+        }
+
+    }
+    public final fun box(): R|kotlin/String| {
+        ^box String(OK)
+    }

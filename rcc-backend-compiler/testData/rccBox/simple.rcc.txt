@@ -1,0 +1,3 @@
+// module.rcc
+entryPoints:
+  com.ukenoveldiyar.rcc.dump.max -> #0

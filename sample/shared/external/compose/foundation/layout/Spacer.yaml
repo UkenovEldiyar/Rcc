@@ -1,0 +1,11 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: SpacerExtern
+  file:
+    name: Spacer.kt
+    declaration:
+      - function:
+          fqName: androidx.compose.foundation.layout.Spacer
+          parameters: [
+            androidx.compose.ui.Modifier,
+          ]

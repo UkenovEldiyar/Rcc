@@ -1,0 +1,18 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: TextUnitExtern
+  file:
+    name: TextUnit.kt
+    declaration:
+      - interface:
+          fqName: androidx.compose.ui.unit.TextUnit.Companion
+          declaration:
+            - property:
+                fqName: androidx.compose.ui.unit.TextUnit.Companion.Unspecified
+                type: androidx.compose.ui.unit.TextUnit
+
+      - property:
+          fqName: androidx.compose.ui.unit.sp
+          extension: kotlin.Int
+          type: androidx.compose.ui.unit.TextUnit
+          mutable: false

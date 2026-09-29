@@ -1,0 +1,20 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: AlignmentExtern
+  file:
+    name: Alignment.kt
+    declaration:
+      - interface:
+          fqName: androidx.compose.ui.Alignment.Companion
+          declaration:
+            - property:
+                fqName: androidx.compose.ui.Alignment.Companion.Start
+                type: androidx.compose.ui.Alignment.Horizontal
+
+            - property:
+                fqName: androidx.compose.ui.Alignment.Companion.CenterVertically
+                type: androidx.compose.ui.Alignment.Vertical
+
+            - property:
+                fqName: androidx.compose.ui.Alignment.Companion.CenterHorizontally
+                type: androidx.compose.ui.Alignment.Horizontal

@@ -1,0 +1,45 @@
+FILE: entryPoint.kt
+    package com.ukenoveldiyar.rcc
+
+    @R|com/ukenoveldiyar/rcc/backend/compiler/annotation/RccEntryPoint|() public final fun entryPointCallHost(): R|kotlin/Unit| {
+        lval component: R|com/ukenoveldiyar/rcc/Component| = R|com/ukenoveldiyar/rcc/Component.Component|(Int(0), Int(0))
+        lval companion: R|com/ukenoveldiyar/rcc/Component.Companion| = Q|com/ukenoveldiyar/rcc/Component|
+        R|<local>/companion|
+        R|<local>/component|.R|com/ukenoveldiyar/rcc/Component.value1|
+        R|<local>/component|.R|com/ukenoveldiyar/rcc/Component.value2| = Int(0)
+        R|<local>/component|.R|com/ukenoveldiyar/rcc/Component.member|()
+        R|<local>/component|.R|com/ukenoveldiyar/rcc/Component.member|(Int(0))
+        R|kotlin/with|<R|com/ukenoveldiyar/rcc/Component|, R|kotlin/Unit|>(R|<local>/component|, <L> = with@fun R|com/ukenoveldiyar/rcc/Component|.<anonymous>(): R|kotlin/Unit| <inline=Inline, kind=EXACTLY_ONCE>  {
+            (this@R|special/anonymous|, String()).R|com/ukenoveldiyar/rcc/Component.member|(Int(0))
+        }
+        )
+    }
+    public final class Component : R|kotlin/Any| {
+        public constructor(value1: R|kotlin/Int|, value2: R|kotlin/Int|): R|com/ukenoveldiyar/rcc/Component| {
+            super<R|kotlin/Any|>()
+        }
+
+        public final val value1: R|kotlin/Int| = R|<local>/value1|
+            public get(): R|kotlin/Int|
+
+        public final var value2: R|kotlin/Int| = R|<local>/value2|
+            public get(): R|kotlin/Int|
+            public set(value: R|kotlin/Int|): R|kotlin/Unit|
+
+        public final fun member(): R|kotlin/Unit| {
+        }
+
+        public final fun member(paremeter1: R|kotlin/Int|): R|kotlin/Unit| {
+        }
+
+        public final fun R|kotlin/String|.member(paremeter1: R|kotlin/Int|): R|kotlin/Unit| {
+        }
+
+        public final companion object Companion : R|kotlin/Any| {
+            private constructor(): R|com/ukenoveldiyar/rcc/Component.Companion| {
+                super<R|kotlin/Any|>()
+            }
+
+        }
+
+    }

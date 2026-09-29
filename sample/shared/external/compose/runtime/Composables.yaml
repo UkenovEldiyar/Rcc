@@ -1,0 +1,15 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: ComposablesExtern
+  file:
+    name: Composables.kt
+    declaration:
+      # top-level @Composable свойство БЕЗ receiver'а — читает Composer неявно (через
+      # LocalComposer/currentComposer внутри своего тела), а НЕ extension на Composer, как
+      # казалось по одноимённости с Composer.* — реальный JVM-дескриптор
+      # getCurrentCompositeKeyHashCode(Composer, Int) несёт композер как ОБЫЧНЫЙ
+      # служебный хвост (есть у ЛЮБОГО composable), а не как настоящий receiver.
+      - property:
+          fqName: androidx.compose.runtime.currentCompositeKeyHashCode
+          type: kotlin.Long
+          mutable: false

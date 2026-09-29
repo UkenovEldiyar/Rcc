@@ -1,0 +1,67 @@
+external:
+  package: "com.ukenoveldiyar.sample.shared"
+  name: ComposerExtern
+  file:
+    name: Composer.kt
+    declaration:
+      - interface:
+          fqName: androidx.compose.runtime.Composer
+          declaration:
+            - function:
+                fqName: androidx.compose.runtime.Composer.rememberedValue
+
+            - function:
+                fqName: androidx.compose.runtime.Composer.updateRememberedValue
+                parameters: [kotlin.Any]
+
+            - function:
+                fqName: androidx.compose.runtime.Composer.startRestartGroup
+                parameters: [kotlin.Int]
+
+            - function:
+                fqName: androidx.compose.runtime.Composer.endRestartGroup
+
+            - function:
+                fqName: androidx.compose.runtime.Composer.skipToGroupEnd
+
+            - function:
+                fqName: androidx.compose.runtime.Composer.shouldExecute
+                parameters: [kotlin.Boolean, kotlin.Int]
+
+            - function:
+                fqName: androidx.compose.runtime.Composer.changed
+                parameters: [kotlin.Any]
+
+            - function:
+                fqName: androidx.compose.runtime.Composer.changedInstance
+                parameters: [kotlin.Any]
+
+            - property:
+                fqName: androidx.compose.runtime.Composer.currentCompositionLocalMap
+                type: androidx.compose.runtime.CompositionLocalMap
+                mutable: false
+
+            - function:
+                fqName: androidx.compose.runtime.Composer.startDefaults
+
+            - function:
+                fqName: androidx.compose.runtime.Composer.endDefaults
+
+            - property:
+                fqName: androidx.compose.runtime.Composer.defaultsInvalid
+                type: kotlin.Boolean
+                mutable: false
+
+      - interface:
+          fqName: androidx.compose.runtime.Composer.Companion
+          declaration:
+            - property:
+                fqName: androidx.compose.runtime.Composer.Companion.Empty
+                type: kotlin.Any
+
+      - interface:
+          fqName: androidx.compose.runtime.ScopeUpdateScope
+          declaration:
+            - function:
+                fqName: androidx.compose.runtime.ScopeUpdateScope.updateScope
+                parameters: ["(androidx.compose.runtime.Composer, kotlin.Int) -> kotlin.Unit"]

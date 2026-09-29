@@ -1,0 +1,12 @@
+FILE: entryPointNon.kt
+    package com.ukenoveldiyar.rcc.non
+
+    public final fun entryPointNon(): R|kotlin/Unit| {
+        lval component: R|com/ukenoveldiyar/rcc/non/ComponentNon| = R|com/ukenoveldiyar/rcc/non/ComponentNon.ComponentNon|()
+    }
+    public final class ComponentNon : R|kotlin/Any| {
+        public constructor(): R|com/ukenoveldiyar/rcc/non/ComponentNon| {
+            super<R|kotlin/Any|>()
+        }
+
+    }

@@ -1,0 +1,22 @@
+external:
+  package: ""
+  name: ColumnExtern
+  file:
+    name: SnapshotState.kt
+    declaration:
+      - function:
+          fqName: androidx.compose.runtime.mutableStateOf
+          parameters:
+            - kotlin.Any
+            - androidx.compose.runtime.SnapshotMutationPolicy
+
+      - interface:
+          fqName: androidx.compose.runtime.State
+          declaration:
+            - properties:
+
+      - constructor:
+          parameters:
+
+
+
